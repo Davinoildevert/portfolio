@@ -1,34 +1,28 @@
 export const KENNEY_BASE = "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b";
 
 export const ASSETS = {
-  laptop: `${KENNEY_BASE}/3d/furniture/laptop.glb`,
+  // Premium CC-BY assets
+  macbook: "https://raw.githubusercontent.com/Itssanthoshhere/Macbook-Landing-Page/8db2f8ad05c2143b487e493734123b800aa8a52f/public/models/macbook-transformed.glb",
+  desktop: "https://raw.githubusercontent.com/basedcatx/3d-portfolio/25578bef88a61ce434c6f934e2dc62d385f615c9/public/models/desktop_computer.glb",
+  kioskPremium: "https://raw.githubusercontent.com/soyandresdev/the-frontend-projects/4b2a59bcfbe7a9592d939945891fc3bd530eb71d/workspace/02-landingpage_3d_restaurant/public/assets/kiosk.glb",
+  boatPremium: "https://raw.githubusercontent.com/macenteno63/Dredge/06c263243f5cc970e3f37924b1b7f88ffb3dd2c0/public/boat.glb",
+  dicePremium: "https://raw.githubusercontent.com/mohsen-ameli/3d-backgammon/17181a9b9fa27ec79db3a3b9992f4b8ee796e766/frontend/public/models/rust_dice.glb",
+
+  // Lightweight CC0 support assets
   monitor: `${KENNEY_BASE}/3d/furniture/computerScreen.glb`,
   keyboard: `${KENNEY_BASE}/3d/furniture/computerKeyboard.glb`,
   desk: `${KENNEY_BASE}/3d/furniture/desk.glb`,
   roundTable: `${KENNEY_BASE}/3d/furniture/tableRound.glb`,
-
   computer: `${KENNEY_BASE}/3d/space-station/computer.glb`,
   computerSystem: `${KENNEY_BASE}/3d/space-station/computer-system.glb`,
   computerWide: `${KENNEY_BASE}/3d/space-station/computer-wide.glb`,
   stationScreen: `${KENNEY_BASE}/3d/space-station/computer-screen.glb`,
-
-  conveyor: `${KENNEY_BASE}/3d/factory/conveyor-long.glb`,
-  machine: `${KENNEY_BASE}/3d/factory/machine-window.glb`,
   factoryScreen: `${KENNEY_BASE}/3d/factory/screen-wide.glb`,
   panel: `${KENNEY_BASE}/3d/factory/screen-panel-wide.glb`,
-
-  ticketMachine: `${KENNEY_BASE}/3d/mini-arcade/ticket-machine.glb`,
-  cashRegister: `${KENNEY_BASE}/3d/mini-arcade/cash-register.glb`,
-  arcadeMachine: `${KENNEY_BASE}/3d/mini-arcade/arcade-machine.glb`,
-  gamblingMachine: `${KENNEY_BASE}/3d/mini-arcade/gambling-machine.glb`,
-
-  boat: `${KENNEY_BASE}/3d/watercraft/boat-fan.glb`,
-  speedBoat: `${KENNEY_BASE}/3d/watercraft/boat-speed-a.glb`,
   buoy: `${KENNEY_BASE}/3d/watercraft/buoy.glb`,
   buoyFlag: `${KENNEY_BASE}/3d/watercraft/buoy-flag.glb`,
-
   coin: `${KENNEY_BASE}/3d/prototype/coin.glb`
-};
+}
 
 export const projects = [
   {
