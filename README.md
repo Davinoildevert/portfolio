@@ -1,18 +1,34 @@
-# Davino // System — Portfolio
+# Davino // Engineering System — Portfolio
 
 Portfolio personnel de Davino Ildevert ANDRIANARIVONY.
 
-## Concept
+## V4 — Engineering Lab + Mission Control
 
-Portfolio interactif orienté **Software Engineering / Backend / Python / APIs / Automation**.
+Le portfolio est conçu comme un **produit interactif**, pas comme un CV animé.
 
-- page d’entrée “system boot”
-- cartographie interactive des projets
-- fiches projet détaillées dans des panneaux modaux
-- parcours professionnel
-- capability map / stack
-- contact LinkedIn, GitHub et email
-- aucune dépendance : HTML/CSS/JavaScript statique, compatible GitHub Pages
+### Direction visuelle
+- intro immersive "system boot"
+- hero 3D avec noyau logiciel et modules orbitaux
+- une scène 3D conceptuelle différente pour chaque projet
+- illustrations basées sur la fonction réelle des projets, sans fausses captures d'écran
+- palette graphite / bleu froid / accents par projet
+- animations adaptées au mobile et à `prefers-reduced-motion`
+
+### Projets mis en scène
+- IldavBotV2 — pipeline Telegram → parsing → validation → MT5/Paper → API → dashboard
+- CVconnectV2 — backend central + modules auth / rôles / PDF / storage
+- Restaurant Kiosk — borne JavaFX → REST → Javalin → SQLite
+- Battle Boat — bateau autonome, GPS, Pixhawk, navigation et waypoints
+- Puissance 4 Server — deux clients reliés à un serveur TCP central
+- Kikiri — plateau de jeu, zones de pari, timer et historique
+
+### Stack du portfolio
+- HTML / CSS / JavaScript
+- Three.js via module CDN
+- WebGL
+- GitHub Pages
+
+Aucune installation n'est nécessaire pour le visiteur.
 
 ## Déploiement GitHub Pages
 
@@ -25,4 +41,4 @@ Dans GitHub :
 6. Folder : **/ (root)**
 7. **Save**
 
-L’URL attendue sera : `https://davinoildevert.github.io/portfolio/`
+URL attendue : `https://davinoildevert.github.io/portfolio/`
