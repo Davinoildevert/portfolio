@@ -3,114 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#060912">
-<meta name="description" content="Portfolio de Davino Ildevert Andrianarivony — Software Engineering, Backend, Python, APIs, Automation.">
-<title>Davino // Engineering System</title>
+<meta name="theme-color" content="#f2efe7">
+<meta name="description" content="Portfolio de Davino Ildevert Andrianarivony — développement logiciel, backend, Python, API et automatisation.">
+<title>Davino Ildevert — Software Engineering Portfolio</title>
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<div class="site-grid"></div>
-<div class="site-noise"></div>
-
-<div class="intro" id="intro" aria-hidden="false">
-  <div class="intro-inner">
-    <div class="intro-mark"><span>DI</span></div>
-    <div class="intro-kicker">PORTFOLIO SYSTEM / BUILD 2026.09</div>
-    <h1>DAVINO<br><span>// ENGINEERING</span></h1>
-    <p class="intro-copy">Software Engineering · Backend · Python · APIs · Automation</p>
-    <button class="enter" onclick="enterSystem()">INITIALIZE SYSTEM ↗</button>
-    <div class="intro-meta"><span>TOULON / FRANCE</span><span>4TH-YEAR ENGINEERING STUDENT</span><span>2-YEAR APPRENTICESHIP</span></div>
-  </div>
-</div>
-
 <header>
   <div class="navbar wrap">
-    <a class="brand" href="#home"><span class="brand-badge">DI</span><span>DAVINO // SYSTEM</span></a>
-    <nav class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#journey">Journey</a>
-      <a href="#stack">Stack</a>
-      <a href="#about">About</a>
+    <a class="brand" href="#home"><span class="brand-dot"></span><span>Davino Ildevert</span></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#projects">Projets</a>
+      <a href="#journey">Parcours</a>
+      <a href="#stack">Compétences</a>
+      <a href="#about">À propos</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="availability">AVAILABLE FOR ALTERNANCE</div>
+    <a class="availability" href="#contact">Alternance 2 ans</a>
   </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-  <canvas id="heroCanvas" aria-label="Scène 3D interactive représentant un système logiciel"></canvas>
-  <div class="aurora"></div>
+  <canvas id="heroCanvas" aria-label="Scène 3D interactive d'un espace de travail logiciel"></canvas>
+  <div class="hero-shade"></div>
   <div class="hero-inner wrap">
     <div class="hero-copy">
-      <p class="eyebrow">SOFTWARE ENGINEERING · ISEN MÉDITERRANÉE</p>
-      <h1>I build software<br>from <span class="accent">logic to integration.</span></h1>
-      <p class="hero-lead">Élève ingénieur en 4e année, je construis des systèmes backend, API et automatisations en reliant plusieurs technologies plutôt qu’en travaillant uniquement sur l’interface.</p>
+      <p class="eyebrow">ÉLÈVE INGÉNIEUR 4E ANNÉE · ISEN MÉDITERRANÉE</p>
+      <h1>Je construis des<br><em>systèmes logiciels</em><br>de bout en bout.</h1>
+      <p class="hero-lead">Backend, Python, API, Full Stack et automatisation — avec un intérêt particulier pour l’intégration de plusieurs technologies dans des systèmes complets et utiles.</p>
       <div class="hero-actions">
-        <a class="btn primary" href="#projects">EXPLORE SELECTED SYSTEMS ↓</a>
-        <a class="btn" href="https://github.com/Davinoildevert" target="_blank" rel="noreferrer">GITHUB ↗</a>
+        <a class="btn primary" href="#projects">Voir mes projets</a>
+        <a class="btn" href="https://github.com/Davinoildevert" target="_blank" rel="noreferrer">GitHub ↗</a>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><b>BACKEND</b>Python · Node.js · APIs</div>
-        <div class="stat"><b>ENGINEERING</b>Software · Systems · Integration</div>
-        <div class="stat"><b>WORKFLOW</b>Agile / Scrum · Git · Docker</div>
+      <div class="hero-meta">
+        <span><b>Recherche</b> Alternance 2 ans</span>
+        <span><b>Rythme</b> 2 sem. / 2 sem.</span>
+        <span><b>Mobilité</b> France</span>
       </div>
     </div>
   </div>
-  <div class="hero-hud">
-    <div class="hud-card"><span>STATUS</span><b>OPEN TO WORK</b></div>
-    <div class="hud-card"><span>FORMAT</span><b>2 WEEKS / 2 WEEKS</b></div>
-    <div class="hud-card"><span>MOBILITY</span><b>FRANCE</b></div>
+
+  <div class="hero-3d-note">
+    <span class="orbit-dot"></span>
+    <div><b>LIVE 3D</b><small>déplace le pointeur</small></div>
+  </div>
+  <div class="scene-loading hero-loading" id="heroLoading"><span></span>CHARGEMENT DE LA SCÈNE 3D</div>
+</section>
+
+<section class="section projects-section" id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">01 — PROJETS SÉLECTIONNÉS</span>
+        <h2>Des projets montrés<br>comme de vrais systèmes.</h2>
+      </div>
+      <p>Chaque projet possède sa propre scène 3D interactive avec de vrais modèles GLB. Le visuel sert à comprendre le système, puis la fiche détaille le problème, ma contribution et le résultat.</p>
+    </div>
+
+    <div class="projects-wrap" id="projectsWrap"></div>
+
+    <div class="other-projects reveal">
+      <article class="other-card">
+        <span>07</span><b>AlcHiRoute</b>
+        <p>Application mobile de gestion de tournées · React Native / Expo.</p>
+      </article>
+      <article class="other-card">
+        <span>08</span><b>Bras robotique</b>
+        <p>Mécanique, impression 3D, Arduino et pilotage depuis une application PC.</p>
+      </article>
+      <a class="other-card more" href="https://github.com/Davinoildevert" target="_blank" rel="noreferrer">
+        <span>+</span><b>Voir plus sur GitHub</b>
+        <p>Repos publics, code source et documentation technique.</p>
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="section wrap" id="projects">
-  <div class="section-head reveal">
-    <div>
-      <span class="section-index">01 / SELECTED SYSTEMS</span>
-      <h2>Projects you can<br>understand at a glance.</h2>
+<section class="section journey-section" id="journey">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">02 — PARCOURS</span>
+        <h2>Le logiciel n’est qu’une partie<br>de ma façon de travailler.</h2>
+      </div>
+      <p>Développement, relation client, pédagogie et travail sous pression : des contextes différents qui renforcent l’autonomie, la communication et la capacité à livrer.</p>
     </div>
-    <p>Pas de fausses captures d’écran : chaque projet possède sa propre scène 3D conceptuelle, basée sur ce qu’il fait réellement et sur ma contribution.</p>
-  </div>
-  <div class="projects-wrap" id="projectsWrap"></div>
 
-  <div class="other-projects reveal">
-    <div class="other-card"><b>AlcHiRoute</b><p>Application mobile de gestion de tournées · React Native / Expo.</p></div>
-    <div class="other-card"><b>Robotic Arm</b><p>Mécanique, impression 3D, Arduino et pilotage depuis une application PC.</p></div>
-    <div class="other-card"><b>More on GitHub</b><p>Les projets publics et leur code restent accessibles depuis mon profil GitHub.</p></div>
-  </div>
-</section>
-
-<section class="section wrap" id="journey">
-  <div class="section-head reveal">
-    <div>
-      <span class="section-index">02 / JOURNEY</span>
-      <h2>Different contexts.<br>Same way of building.</h2>
-    </div>
-    <p>Développement, relation client, pédagogie et travail sous pression : des environnements différents qui ont renforcé ma façon de collaborer et de résoudre des problèmes.</p>
-  </div>
-  <div class="journey-shell reveal">
-    <div class="timeline-line"></div>
-    <div class="journey-grid">
+    <div class="journey-grid reveal">
       <article class="journey-card">
-        <span class="year">2021 — 2022</span>
+        <div class="journey-year">2021 — 2022</div>
         <h3>Co-fondateur · HidaE</h3>
         <p>Organisation et enseignement d’un programme de soutien scolaire pour environ 20 élèves.</p>
-        <p class="result">Tous ont obtenu le baccalauréat avec mention.</p>
+        <strong>Tous ont obtenu le baccalauréat avec mention.</strong>
       </article>
       <article class="journey-card">
-        <span class="year">2024 — 2025</span>
+        <div class="journey-year">2024 — 2025</div>
         <h3>Développeur Python · Freelance</h3>
         <p>Évolution d’un module de backtesting : traitement de données, fonctionnalités, debug, tests fonctionnels et documentation.</p>
       </article>
       <article class="journey-card">
-        <span class="year">2025 — présent</span>
+        <div class="journey-year">2025 — présent</div>
         <h3>KFC · Toulon</h3>
         <p>Polyvalence, travail en équipe et gestion des priorités dans un environnement à forte cadence.</p>
-        <p class="result">2× Employé du mois · équipe d’environ 30 collaborateurs.</p>
+        <strong>2× Employé du mois · équipe d’environ 30 collaborateurs.</strong>
       </article>
       <article class="journey-card">
-        <span class="year">2025 — présent</span>
+        <div class="journey-year">2025 — présent</div>
         <h3>Superprof · Toulon</h3>
         <p>Mathématiques niveau seconde : exercices personnalisés, préparation aux évaluations et adaptation des explications.</p>
       </article>
@@ -118,119 +117,117 @@
   </div>
 </section>
 
-<section class="section wrap" id="stack">
-  <div class="section-head reveal">
-    <div>
-      <span class="section-index">03 / CAPABILITY MAP</span>
-      <h2>Skills connected<br>to real systems.</h2>
-    </div>
-    <p>Les compétences ne sont pas une simple liste : elles correspondent aux technologies réellement utilisées dans mes projets et mes expériences.</p>
-  </div>
-
-  <div class="capability-layout reveal">
-    <div class="capability-map">
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <line x1="50" y1="48" x2="18" y2="20"></line>
-        <line x1="50" y1="48" x2="82" y2="19"></line>
-        <line x1="50" y1="48" x2="18" y2="80"></line>
-        <line x1="50" y1="48" x2="82" y2="80"></line>
-        <line x1="50" y1="48" x2="50" y2="92"></line>
-      </svg>
-      <div class="cap-node cap-core"><strong>SOFTWARE</strong><small>ENGINEERING CORE</small></div>
-      <div class="cap-node cap-a"><strong>BACKEND</strong><small>Python · Node · Flask</small></div>
-      <div class="cap-node cap-b"><strong>WEB</strong><small>React · Next · TS</small></div>
-      <div class="cap-node cap-c"><strong>SYSTEMS</strong><small>C · Linux · Docker</small></div>
-      <div class="cap-node cap-d"><strong>AUTOMATION</strong><small>n8n · MCP · LLM APIs</small></div>
-      <div class="cap-node cap-e"><strong>PRACTICES</strong><small>Agile / Scrum · Git</small></div>
-    </div>
-
-    <div class="capability-list">
-      <div class="cap-block"><span class="label">LANGUAGES</span><h3>Core languages</h3><p>Python · TypeScript · JavaScript · Java · C · SQL</p></div>
-      <div class="cap-block"><span class="label">BACKEND & API</span><h3>Services</h3><p>Node.js · Express · Flask · REST APIs · JWT · Swagger / OpenAPI</p></div>
-      <div class="cap-block"><span class="label">FRONTEND</span><h3>Interfaces</h3><p>React · Next.js · React Native / Expo · HTML / CSS</p></div>
-      <div class="cap-block"><span class="label">SYSTEMS & DATA</span><h3>Tooling</h3><p>Linux / Ubuntu · Git · Docker · SQLite · MongoDB</p></div>
-      <div class="cap-block"><span class="label">AUTOMATION & AI</span><h3>Workflow</h3><p>Python automation · n8n · MCP · API OpenAI / Anthropic · AI-assisted development</p></div>
-      <div class="cap-block"><span class="label">ENGINEERING PRACTICES</span><h3>How I work</h3><p>Agile / Scrum · Sprint Planning · Daily · Review · Retrospective · Debug · Documentation technique</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section wrap" id="about">
-  <div class="section-head reveal">
-    <div>
-      <span class="section-index">04 / ABOUT</span>
-      <h2>The person behind<br>the systems.</h2>
-    </div>
-    <p>Le portfolio complète mon CV : il montre les projets, mais aussi la façon dont j’aborde l’apprentissage, la collaboration et l’intégration de technologies.</p>
-  </div>
-
-  <div class="about-grid reveal">
-    <div class="about-photo">
-      <img src="https://avatars.githubusercontent.com/u/185962250?v=4" alt="Photo de profil de Davino Ildevert Andrianarivony">
-      <div class="about-id">DAVINO ILDEVERT ANDRIANARIVONY · TOULON</div>
-    </div>
-    <div class="about-copy">
-      <h3>Curious about what happens behind the interface.</h3>
-      <p>Je suis élève ingénieur en 4e année à l’ISEN Méditerranée, filière Développement Logiciel. J’aime construire des systèmes complets, comprendre leur architecture et relier plusieurs technologies entre elles. Mes centres d’intérêt techniques se situent particulièrement autour du backend, des API, de l’automatisation et de l’IA appliquée au développement.</p>
-      <div class="about-stats">
-        <div class="about-stat"><b>22</b><span>AGE</span></div>
-        <div class="about-stat"><b>4TH</b><span>ENGINEERING YEAR</span></div>
-        <div class="about-stat"><b>FR</b><span>NATIONAL MOBILITY</span></div>
-        <div class="about-stat"><b>2 YEARS</b><span>APPRENTICESHIP</span></div>
+<section class="section stack-section" id="stack">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">03 — COMPÉTENCES</span>
+        <h2>Une stack reliée<br>à des réalisations concrètes.</h2>
       </div>
-      <div class="engagements">
-        <span>ISEN ENGINEERING</span>
-        <span>ISEN REDCATS</span>
-        <span>ISEN REPAIR</span>
-        <span>AFEV TOULON</span>
+      <p>Je préfère montrer une compétence dans un projet plutôt que simplement l’ajouter à une liste. Voici les technologies que j’utilise réellement aujourd’hui.</p>
+    </div>
+
+    <div class="capability-layout reveal">
+      <div class="capability-map">
+        <div class="cap-orbit orbit-one"></div>
+        <div class="cap-orbit orbit-two"></div>
+        <div class="cap-node cap-core"><strong>Software</strong><small>Engineering</small></div>
+        <div class="cap-node cap-a"><strong>Backend</strong><small>Python · Node · Flask</small></div>
+        <div class="cap-node cap-b"><strong>Web</strong><small>React · Next · TS</small></div>
+        <div class="cap-node cap-c"><strong>Systems</strong><small>C · Linux · Docker</small></div>
+        <div class="cap-node cap-d"><strong>Automation</strong><small>n8n · MCP · LLM APIs</small></div>
+        <div class="cap-node cap-e"><strong>Practices</strong><small>Agile / Scrum · Git</small></div>
+      </div>
+
+      <div class="capability-list">
+        <div class="cap-block"><span>LANGAGES</span><h3>Python · TypeScript · JavaScript · Java · C · SQL</h3></div>
+        <div class="cap-block"><span>BACKEND & API</span><h3>Node.js · Express · Flask · REST · JWT · Swagger/OpenAPI</h3></div>
+        <div class="cap-block"><span>FRONTEND & MOBILE</span><h3>React · Next.js · React Native / Expo · HTML/CSS</h3></div>
+        <div class="cap-block"><span>SYSTÈMES & DONNÉES</span><h3>Linux / Ubuntu · Git · Docker · SQLite · MongoDB</h3></div>
+        <div class="cap-block"><span>AUTOMATISATION & IA</span><h3>Python automation · n8n · MCP · API OpenAI / Anthropic</h3></div>
+        <div class="cap-block"><span>MÉTHODES</span><h3>Agile / Scrum · Sprint Planning · Daily · Review · Retro · Documentation</h3></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact wrap reveal" id="contact">
-  <span class="section-index">05 / OPEN CHANNEL</span>
-  <h2>Let's build<br>something real.</h2>
-  <p>Alternance 2 ans · rythme 2 semaines entreprise / 2 semaines école · Toulon · mobilité nationale.</p>
-  <div class="contact-links">
-    <a href="mailto:davinoildevert10@gmail.com">EMAIL ↗</a>
-    <a href="https://www.linkedin.com/in/davino-ildevert-andrianarivony" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
-    <a href="https://github.com/Davinoildevert" target="_blank" rel="noreferrer">GITHUB ↗</a>
+<section class="section about-section" id="about">
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <div class="about-photo">
+        <img src="https://avatars.githubusercontent.com/u/185962250?v=4" alt="Davino Ildevert Andrianarivony">
+      </div>
+      <div class="about-copy">
+        <span class="section-index">04 — À PROPOS</span>
+        <h2>Curieux de ce qui se passe<br>derrière l’interface.</h2>
+        <p>Je suis élève ingénieur en 4e année à l’ISEN Méditerranée, filière Développement Logiciel. J’aime construire des systèmes complets, comprendre leur architecture et relier plusieurs technologies entre elles — particulièrement autour du backend, des API, de l’automatisation et de l’IA appliquée au développement.</p>
+
+        <div class="about-stats">
+          <div><b>22</b><span>ans</span></div>
+          <div><b>4e</b><span>année ingénieur</span></div>
+          <div><b>FR</b><span>mobilité nationale</span></div>
+          <div><b>2 ans</b><span>alternance recherchée</span></div>
+        </div>
+
+        <div class="engagements">
+          <span>ISEN Engineering</span>
+          <span>ISEN REDCATS</span>
+          <span>ISEN Repair</span>
+          <span>AFEV Toulon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <span class="section-index">05 — CONTACT</span>
+    <h2>Construisons quelque chose<br>de concret.</h2>
+    <p>Alternance 2 ans · 2 semaines entreprise / 2 semaines école · Toulon · mobilité nationale.</p>
+    <div class="contact-links">
+      <a href="mailto:davinoildevert10@gmail.com">Email ↗</a>
+      <a href="https://www.linkedin.com/in/davino-ildevert-andrianarivony" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a href="https://github.com/Davinoildevert" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">DAVINO // ENGINEERING SYSTEM · SOFTWARE PORTFOLIO · 2026 · 3D ASSETS: KENNEY CC0</div>
+  <div class="wrap footer-inner">
+    <span>© 2026 Davino Ildevert Andrianarivony</span>
+    <span>3D assets: Kenney · CC0</span>
+  </div>
 </footer>
 
 <div class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer-panel">
-    <button class="drawer-close" onclick="closeProject()">CLOSE ×</button>
+    <button class="drawer-close" onclick="closeProject()">Fermer ×</button>
     <div class="drawer-kicker" id="drawerKicker"></div>
     <h2 id="drawerTitle"></h2>
     <p class="drawer-role" id="drawerRole"></p>
 
     <section class="drawer-section">
-      <span class="label">01 / CHALLENGE</span>
-      <h3>What had to work.</h3>
+      <span>01 — PROBLÈME</span>
+      <h3>Ce qui devait fonctionner.</h3>
       <p id="drawerChallenge"></p>
     </section>
 
     <section class="drawer-section">
-      <span class="label">02 / CONTRIBUTION</span>
-      <h3>What I actually built.</h3>
+      <span>02 — CONTRIBUTION</span>
+      <h3>Ce que j’ai réellement construit.</h3>
       <ul id="drawerContribution"></ul>
     </section>
 
     <section class="drawer-section">
-      <span class="label">03 / RESULT</span>
-      <h3>What came out of it.</h3>
+      <span>03 — RÉSULTAT</span>
+      <h3>Ce qui en est sorti.</h3>
       <p id="drawerResult"></p>
     </section>
 
     <section class="drawer-section">
-      <span class="label">STACK</span>
+      <span>STACK</span>
       <div class="drawer-stack" id="drawerStack"></div>
       <div class="drawer-actions" id="drawerActions"></div>
     </section>
