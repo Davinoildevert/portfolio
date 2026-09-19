@@ -2,35 +2,52 @@
 
 Portfolio personnel de Davino Ildevert ANDRIANARIVONY.
 
-## V4 — Engineering Lab + Mission Control
+## V5 — Asset-based 3D portfolio
 
-Le portfolio est conçu comme un **produit interactif**, pas comme un CV animé.
+La V5 abandonne les simples volumes procéduraux comme visuels principaux et s'appuie sur de **vrais modèles 3D GLB**, chargés dans Three.js et composés dans des scènes propres à chaque projet.
 
-### Direction visuelle
-- intro immersive "system boot"
-- hero 3D avec noyau logiciel et modules orbitaux
-- une scène 3D conceptuelle différente pour chaque projet
-- illustrations basées sur la fonction réelle des projets, sans fausses captures d'écran
-- palette graphite / bleu froid / accents par projet
-- animations adaptées au mobile et à `prefers-reduced-motion`
+### Direction
+- accueil 3D avec vrai mobilier / ordinateur / écran
+- scènes projet différentes selon le sujet
+- éclairage PBR et environnement Three.js
+- mouvements caméra légers et animation de données
+- responsive et respect de `prefers-reduced-motion`
+- fallback si WebGL n'est pas disponible
 
-### Projets mis en scène
-- IldavBotV2 — pipeline Telegram → parsing → validation → MT5/Paper → API → dashboard
-- CVconnectV2 — backend central + modules auth / rôles / PDF / storage
-- Restaurant Kiosk — borne JavaFX → REST → Javalin → SQLite
-- Battle Boat — bateau autonome, GPS, Pixhawk, navigation et waypoints
-- Puissance 4 Server — deux clients reliés à un serveur TCP central
-- Kikiri — plateau de jeu, zones de pari, timer et historique
+### Scènes
+- **IldavBotV2** — laptop, chaîne de traitement, machine, API et écran de supervision
+- **CVconnectV2** — système central et modules connectés
+- **Restaurant Kiosk** — borne, caisse, backend et panneau API
+- **Battle Boat** — vrai modèle de bateau, bouées et trajectoire GPS
+- **Puissance 4 Server** — deux postes clients, serveur central et grille de jeu
+- **Kikiri** — table, machine de jeu, jetons et timer
 
-### Stack du portfolio
+### Stack
 - HTML / CSS / JavaScript
-- Three.js via module CDN
+- Three.js
+- GLTFLoader
 - WebGL
 - GitHub Pages
 
-Aucune installation n'est nécessaire pour le visiteur.
+## 3D assets
 
-## Déploiement GitHub Pages
+Les modèles 3D utilisés proviennent de la bibliothèque **Kenney**, via une copie GitHub épinglée au commit :
+
+`3694c6879e487c108f55677be7dd2ca75b07cc3b`
+
+Kenney publie ses game assets sous licence **Creative Commons CC0**. L'attribution n'est pas obligatoire, mais elle est conservée ici volontairement.
+
+Assets utilisés notamment :
+- Furniture
+- Space Station
+- Factory
+- Mini Arcade
+- Watercraft
+- Prototype
+
+Source officielle : https://kenney.nl/
+
+## GitHub Pages
 
 Dans GitHub :
 1. **Settings**
