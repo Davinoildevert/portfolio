@@ -1,55 +1,49 @@
-# Davino // Engineering System — Portfolio
+# Davino Ildevert — Software Engineering Portfolio
 
-Portfolio personnel de Davino Ildevert ANDRIANARIVONY.
+Portfolio personnel de **Davino Ildevert ANDRIANARIVONY**, élève ingénieur en 4e année à l’ISEN Méditerranée.
 
-## V5 — Asset-based 3D portfolio
+## Direction V5
 
-La V5 abandonne les simples volumes procéduraux comme visuels principaux et s'appuie sur de **vrais modèles 3D GLB**, chargés dans Three.js et composés dans des scènes propres à chaque projet.
+La V5 a été reconstruite comme un **showroom éditorial 3D**, et non comme un CV animé :
 
-### Direction
-- accueil 3D avec vrai mobilier / ordinateur / écran
-- scènes projet différentes selon le sujet
-- éclairage PBR et environnement Three.js
-- mouvements caméra légers et animation de données
-- responsive et respect de `prefers-reduced-motion`
-- fallback si WebGL n'est pas disponible
+- interface claire et recruiter-friendly
+- hero avec un vrai modèle 3D de MacBook
+- une scène spécifique par projet
+- vrais modèles GLB pour les objets principaux
+- éclairage PBR / environnement Three.js
+- animations de données et mouvements caméra discrets
+- chargement 3D **à la demande** lorsque les projets approchent du viewport
+- responsive, fallback WebGL et respect de `prefers-reduced-motion`
 
-### Scènes
-- **IldavBotV2** — laptop, chaîne de traitement, machine, API et écran de supervision
-- **CVconnectV2** — système central et modules connectés
-- **Restaurant Kiosk** — borne, caisse, backend et panneau API
-- **Battle Boat** — vrai modèle de bateau, bouées et trajectoire GPS
-- **Puissance 4 Server** — deux postes clients, serveur central et grille de jeu
-- **Kikiri** — table, machine de jeu, jetons et timer
+## Représentation des projets
 
-### Stack
+Les visuels 3D sont des **illustrations conceptuelles** : ils servent à rendre l’architecture ou le contexte du projet immédiatement compréhensible, sans prétendre être des captures réelles.
+
+- **IldavBotV2** — MacBook + flux Telegram / validation / exécution / API
+- **CVconnectV2** — poste central + modules Auth / CV / PDF / Social
+- **Restaurant Kiosk** — vrai modèle de kiosk + backend REST / SQLite / OpenAPI
+- **Battle Boat** — vrai modèle de bateau + trajectoire GPS / navigation
+- **Puissance 4 Server** — deux ordinateurs + serveur + grille réseau
+- **Kikiri** — vrais dés 3D + table de jeu + timer / historique
+
+## Stack du portfolio
+
 - HTML / CSS / JavaScript
 - Three.js
-- GLTFLoader
+- GLTFLoader + Draco + Meshopt
 - WebGL
 - GitHub Pages
 
-## 3D assets
+## Assets et licences
 
-Les modèles 3D utilisés proviennent de la bibliothèque **Kenney**, via une copie GitHub épinglée au commit :
+Les principaux modèles proviennent de Sketchfab sous **CC BY 4.0**, avec attribution complète dans [CREDITS.md](./CREDITS.md).
 
-`3694c6879e487c108f55677be7dd2ca75b07cc3b`
-
-Kenney publie ses game assets sous licence **Creative Commons CC0**. L'attribution n'est pas obligatoire, mais elle est conservée ici volontairement.
-
-Assets utilisés notamment :
-- Furniture
-- Space Station
-- Factory
-- Mini Arcade
-- Watercraft
-- Prototype
-
-Source officielle : https://kenney.nl/
+Des éléments secondaires Kenney sous **CC0** sont également utilisés.
 
 ## GitHub Pages
 
 Dans GitHub :
+
 1. **Settings**
 2. **Pages**
 3. **Build and deployment**
